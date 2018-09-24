@@ -14,6 +14,7 @@
                 </div>
             </aside>
             <div class="col-xs-8">
+                <h1>TimeLine</h1>
                 @if (count($microposts) > 0)
                     @include('microposts.microposts', ['microposts' => $microposts])
                 @endif

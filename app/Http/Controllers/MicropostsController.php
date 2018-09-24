@@ -20,7 +20,7 @@ class MicropostsController extends Controller
                 'microposts' => $microposts
             ];
             $data+= $this->counts($user);
-            return view('users.show', $data);
+            return view('welcome', $data);
         }else{
             return view('welcome');
         }
